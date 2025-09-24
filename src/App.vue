@@ -1,11 +1,12 @@
 <template>
-<h1>Hello World</h1>
-<div>hello git.</div>
+<h1>Hello World hello Git</h1>
+
 
 </template>
 
 <script>
 export default {
+
   name: "App",
 }
 </script>
