@@ -12,10 +12,10 @@
         <button class="login-button" @click="login">Login</button>
     <div>
       계정이 없으시나요?
-      <span class="signup-button">가입하기</span>  
+      <router-link class="button" to="/signup">가입하기</router-link>
     </div>
 
-    </div> 
+    </div>
 </template>
 
 <script>
@@ -42,16 +42,6 @@ export default {
 </script>
 
 <style scoped>
-.login-button{
-    border-radius: 20px;
-    border:1px solid white ;
-    font-size: 15px;
-    margin: 10px 0px;
-    padding: 10px;
-    width:100%;
-    cursor: pointer;
-
-}
 
 .signup-button{
     color:blue;
