@@ -5,10 +5,10 @@
         <InputField :type="'text'" :placeholder="'Email'" :modelValue="email" v-model="email"/>
         <InputField :type="'password'" :placeholder="'Password'" :modelValue="password" v-model="password"/>
 
-        <button @click="login">Login</button>
+        <button class="login-button" @click="login">Login</button>
     <div>
       계정이 없으시나요?
-      <span>가입하기</span>  
+      <span class="signup-button">가입하기</span>  
     </div>
 
     </div> 
@@ -36,6 +36,26 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.login-button{
+    border-radius: 20px;
+    border:1px solid white ;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 10px;
+    width:100%;
+    cursor: pointer;
+
+}
+
+.signup-button{
+    color:blue;
+    cursor:pointer;
+}
+
+.signup-button{
+    color:aqua;
+    cursor:pointer;
+}
 
 </style>
