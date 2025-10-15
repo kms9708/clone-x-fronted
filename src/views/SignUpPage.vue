@@ -28,6 +28,20 @@ export default {
             confirmPassword:""
         };
     },
+    methods:{
+        signup(){
+            if(this.password !== this.confirmPassword){
+                alert("Passwords do not match!");
+                return;
+            }
+            console.log(this.email, this.name, this.password, this.confirmPassword);
+        }
+    },
+    computed:{
+        isPasswordMatch(){
+            return this.password === this.confirmPassword;
+        }
+    }
 }
 </script>
 
