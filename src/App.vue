@@ -27,4 +27,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.logo-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  max-width:60px;
+  height: auto;
+}
+
 </style>
