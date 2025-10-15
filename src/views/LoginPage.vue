@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="logo-container">
-            <img src="@/assets/x-logo.png" class="logo"/>
-
+            <img src="@/assets/x-logo.png" class="logo" />
         </div>
+        
         <!-- <input type="text" :placeholder="'Email'" v-model="email"/>
         <input type="password" :placeholder="'Password'" v-model="password"/> -->
         <InputField :type="'text'" :placeholder="'Email'" :modelValue="email" v-model="email"/>
@@ -30,6 +30,7 @@ export default {
         return{
             email : "",
             password : "",
+           
         };
     },
     methods : {
