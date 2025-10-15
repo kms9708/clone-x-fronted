@@ -1,15 +1,16 @@
 <template>
   <div class="container">
-    <LoginPage/>
+    
+    <router-view />
+    <!--/login -> <loginPage />  -->
+    <!--/signup -> <signupPage /> -->
   </div>
 </template>
 
 <script>
-import LoginPage from './views/LoginPage.vue';
+
 export default {
   name: 'App',
-  components: {LoginPage},
-
 };
 </script>
 
